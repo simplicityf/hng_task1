@@ -14,7 +14,7 @@ def home():
         "current_datetime": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"), 
         "github_url": "https://github.com/simplicityf/hng_task1"
     }
-    response_data.sort() = False
+    response_data.sort() == False
     return jsonify(respone_data)
 
 
