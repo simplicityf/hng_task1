@@ -12,8 +12,9 @@ def home():
     respone_data = {
         "email": "omobolanlehazeezat@gmail.com", 
         "current_datetime": datetime.datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ"), 
-        "gitHub_url": "https://github.com/simplicityf/hng_task1"
+        "github_url": "https://github.com/simplicityf/hng_task1"
     }
+    response_data.sort() = False
     return jsonify(respone_data)
 
 
