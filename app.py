@@ -1,7 +1,6 @@
 from flask import Flask, jsonify
 from flask_cors import CORS
 import datetime
-import requests
 
 
 app = Flask(__name__)
@@ -18,8 +17,8 @@ def home():
         }
         return jsonify(respone_data), 200
         
-    except requests.exceptions.RequestException as e:
-        return jsonify({'error': str(e)}), 500
+    except:
+        return jsonify(error="Internal Server Error"), 500
 
 
 if __name__ == '__main__':
