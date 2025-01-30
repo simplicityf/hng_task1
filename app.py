@@ -14,8 +14,9 @@ def home():
             "email": "omobolanlehazeezat@gmail.com", 
             "current_datetime": datetime.datetime.now(datetime.timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
             "github_url": "https://github.com/simplicityf/hng_task1
-            }
+        }
         return jsonify(respone_data), 200
+        
     except requests.exceptions.RequestException as e:
         return jsonify({'error': str(e)}), 500
 
